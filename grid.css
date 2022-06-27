@@ -15,119 +15,51 @@ body {
 }
 
 .container {
-    width: 70%;
+    width: 50%;
+    padding: 40px;
     display: grid;
-    grid-template-areas: 'a b c';
-    justify-content: center;
-    align-items: center;
+    grid-template-areas: 
+    'a a a a a a a a b b b'
+    'a a a a a a a a b b b'
+    'a a a a a a a a b b b'
+    'c c c c d d d d d d d'
+    'c c c c d d d d d d d'
+    'c c c c e e e e e e e'
+    'c c c c e e e e e e e'
+    'c c c c e e e e e e e'
+    ;
+    /* justify-content: center;
+    align-items: center; */
     margin: auto;
-    margin-top: 6%;
-    color: white;
+    gap: 10px;
+    color: transparent;
+    
 
 }
 
-.sedans {
-    height: 500px;
-    background-color: hsl(31, 77%, 52%);
-    padding: 60px 60px 40px 50px;
+.a{
     grid-area: a;
-    border-radius: 15px 0px 0px 15px;
+    padding: 100px;
+    background-color: orangered;
 }
-
-h1 {
-    font-size: 40px;
-    padding: 25px 0;
-
-}
-
-p {
-    font-family: 'Lexend Deca',
-        sans-serif;
-    line-height: 25px;
-    padding-bottom: 90px;
-
-}
-
-
-.suvs {
-    height: 500px;
-    background-color: hsl(184, 100%, 22%);
-    padding: 60px 60px 40px 50px;
+.b {
     grid-area: b;
-
+    padding: 100px;
+    background-color: orange;
 }
-
-.luxury {
-    height: 500px;
-    background-color: hsl(179, 100%, 13%);
-    padding: 60px 60px 40px 50px;
+.c {
     grid-area: c;
-    border-radius: 0px 15px 15px 0px;
+    padding: 100px;
+    background-color: rgb(7, 184, 7);
 }
-
-button {
-    background-color: white;
-    padding: 13px 35px;
-    text-align: center;
-    font-family: 'Lexend Deca',
-        sans-serif;
-    border-radius: 25px;
-    border: thin solid transparent;
-    cursor: pointer;
-
+.d {
+    grid-area: d;
+    padding: 30px;
+    background-color: rgb(18, 156, 156);
 }
-
-button:hover {
-    transform: scale(1.05);
-
-}
-
-.luxurybut {
-    color: hsl(179, 100%, 13%);
-    border-radius: 1px solid hsl(180, 95%, 7%);
-}
-
-.sedansbut {
-    color: hsl(31, 77%, 52%);
-    border-radius: 1px solid hsl(31, 67%, 42%);
-}
-
-.suvsbut {
-    color: hsl(184, 100%, 22%);
-    border-radius: 1px solid hsl(184, 98%, 16%);
-}
-
-@media screen and (max-width: 375px) {
-    .container {
-        /* flex-wrap: wrap; */
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
-        margin-top: 30px;
-        padding: 40px 0px;
-        gap: 10px;
-
-
-    }
-
-    .sedans {
-        border-radius: 0;
-        text-align: center;
-        border-radius: 10px 10px 10px 10px;
-
-    }
-
-    .suvs {
-        border-radius: 0;
-        text-align: center;
-        border-radius: 10px 10px 10px 10px;
-    }
-
-    .luxury {
-        border-radius: 0;
-        text-align: center;
-        border-radius: 10px 10px 10px 10px;
-    }
+.e{
+    grid-area: e;
+    padding: 30px;
+    background-color: rgb(18, 156, 156);
 
 }
